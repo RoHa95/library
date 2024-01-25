@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { IoMdHeart } from "react-icons/io";
 
 import styles from "./bookCard.module.scss";
-function BookCard({data:{title, author,image, language, pages }}) {
-
+function BookCard({data, likedListHandler}) {
+    const {title, author,image, language, pages } = data;
     const [like, setLike] = useState();
     const likeHandler = ()=>{
+        likedListHandler(data, like);
         setLike( like => !like);
     }
     return (
