@@ -1,10 +1,11 @@
-import img from "./assets/1.png"
+import Layout from "./layouts/Layout";
+import Books from "./components/Books";
+
 function App() {
   return (
-    <>
-      <h1>Book App Starting files</h1>
-      <img src={img} alt="uuu" />
-    </>
+    <Layout>
+      <Books></Books>
+    </Layout>
   );
 }
 
