@@ -20,7 +20,7 @@ function BookCard({data, likedListHandler}) {
                     <span>{pages} pages</span>
                 </div>
             </div>
-            <button onClick={likeHandler}><IoMdHeart color={like? "red" : "#e0e0e0"} fontSize="1.8rem"/></button>
+            <button className={styles.likeBtn} onClick={likeHandler}><IoMdHeart color={like? "red" : "#e0e0e0"} fontSize="1.8rem"/></button>
         </div> 
     );
 }
